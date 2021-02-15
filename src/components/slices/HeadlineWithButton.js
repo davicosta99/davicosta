@@ -5,6 +5,7 @@ import GatsbyLink from '../GatsbyLink'
 const HeadlineWithButton = ({ slice }) => (
   <section className="headline-with-button">
     <div>
+      <RichText render={slice.primary.jibber.raw || []} />
       <RichText render={slice.primary.headline.raw || []} />
       <RichText
         render={slice.primary.description.raw || []}
