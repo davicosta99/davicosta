@@ -103,6 +103,11 @@ query homepageQuery($lang: String) {
           slice_label
           slice_type
           primary {
+            jibber {
+              html
+              raw
+              text
+            }
             headline {
               html
               raw
